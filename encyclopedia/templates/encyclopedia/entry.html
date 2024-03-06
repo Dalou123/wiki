@@ -1,0 +1,18 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ name }}
+{% endblock %}
+
+{% block body %}
+
+    <form action="{% url 'wiki:editing' name %}" method="POST">
+        {% csrf_token %}
+        <button class="right btn btn-danger" type="submit" name="delete" >Delete Entry</button>
+    </form>
+
+    <a class="right btn btn-info" href="{% url 'wiki:editing' name %}">Edit Entry </a>
+
+    {{ entry | safe }}
+
+{% endblock %}

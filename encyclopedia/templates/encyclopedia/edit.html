@@ -1,0 +1,34 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Edit Page
+{% endblock %}
+
+{% block body %}
+    <div class="create-page">
+        <h1>Edit Existing Entry</h1>
+
+        <form action="{% url 'wiki:editing' original_title %}" method="POST">
+            {% csrf_token %}
+
+            <div class="form-element">
+                <label>Entry Title</label><br>
+                {{ form.page_title }}
+            </div>
+
+            <br>
+
+            <div class="form-element">
+                <label>Entry Contents</label><br>
+                {{ form.body }}
+            </div>
+
+            <br>
+
+            <button class="btn btn-info" type="submit">Save Changes</button>
+            <a class="btn btn-secondary" href="{% url 'wiki:title' original_title %}">Cancel</a>
+            <button class="btn btn-danger" type="submit" name="delete" >Delete Entry</button>
+
+        </form>
+    </div>
+{% endblock %}

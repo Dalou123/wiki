@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    background-color: white;
+    font-family: Roboto-regular, Arial, sans-serif;
+}
+
+code {
+    white-space: pre;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+textarea {
+    width: 80%;
+    height: 60vh;
+}
+
+input {
+    width: 80%;
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+p {
+    alignment: center;
+    text-align: left;
+    margin: auto;
+    padding: 5px;
+}
+
+.create-page {
+    padding-left: 25px;
+}
+
+
+.main {
+    padding: 10px;
+}
+
+
+.sidebar {
+    background-color: #f0f0f0;
+    /*height: 100vh;   !* disabled because it was causing the screen to flicker when typing in the form*!*/
+    height: 950px;
+    width: 10%;
+    padding: 20px;
+}
+
+
+.sidebar h2 {
+    margin-top: 5px;
+    /*margin-left: 5px;*/
+}
+
+.search_bar {
+    width: 80%;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+
+.search_button {
+    width: 80px;
+    margin-top: 10px;
+}
+
+.right {
+    float: right;
+    text-align: right;
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.error {
+    color: #a5555c;
+    background-color: #f8d7da;
+    font-weight: bold;
+    width: 80%;
+    margin-top: 10px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 5px;
+}
+
+.empty{
+    padding: 0;
+}
+
+.form-element {
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+
+.error_image {
+    height: 20%;
+    max-width: 40%;
+}
+
+
+.center-ver {
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.center {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
